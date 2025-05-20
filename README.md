@@ -10,10 +10,10 @@ Here are the breakdowns and steps for our research:
 
 2. Regime Signal Models: (regime_signal folder)
 * create_Regime_data file requires the regime data input specified in our thesis. This is mainly responisble for data cleaning, VRP calculation and eventual merging.
-1_regime_Y_Selection file use the output from previous file, and conduct selection on the eventual Y selection for out regime model. Spoilers alert, our research found VIX to be the answer.
-2_Final Regime are used to determine the threshold level following regime selection. This serves as a robustness test for the eventual threshold level.
-3_Final_model file conducts model selection to determine the eventual regime model we will applied
-4_regime_performance: after select final model, we learned how dual mom strategy performed under different regimes, which provides insights for the eventual integration of the regime model and our dynamic asset allocation framework.
+* 1_regime_Y_Selection file use the output from previous file, and conduct selection on the eventual Y selection for out regime model. Spoilers alert, our research found VIX to be the answer.
+* 2_Final Regime are used to determine the threshold level following regime selection. This serves as a robustness test for the eventual threshold level.
+* 3_Final_model file conducts model selection to determine the eventual regime model we will applied
+* 4_regime_performance: after select final model, we learned how dual mom strategy performed under different regimes, which provides insights for the eventual integration of the regime model and our dynamic asset allocation framework.
 
-Dynamic Asset Allocation: (DAA folder)
-allocation.py is responsible for creating all types of allocation schema and comparing their performances. This file take the return data output from "Replicate" and regime data output from "3_Final_model".
+3. Dynamic Asset Allocation: (DAA folder)
+* allocation.py is responsible for creating all types of allocation schema and comparing their performances. This file take the return data output from "Replicate" and regime data output from "3_Final_model".
