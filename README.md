@@ -4,12 +4,12 @@ This research aims to enhance the long-only Dual Momentum strategy by integratin
 
 Here are the breakdowns and steps for our research:
 
-Replcation and Performance Analysis: (replicate&analysis folder)
+1. Replcation and Performance Analysis: (replicate&analysis folder)
 * Replicate file are responsible for replicating long-only Dual mom strategy across four asset classes: equities, bonds, commodities, and REITs. It requires monthly return data for all the risky and riskless assets mentioned in our thesis. In the end, it will return a file with the return of dual_mom, relative_mom, abs_mom strategy across for asset classes.
 * Factor Anaysis file will requires the input of return data from Replicate file. In addition, this require the factor data from FF website. This file will conduct factor analysis, as well as in-sample and out-sample robustness tests.
 
-Regime Signal Models: (regime_signal folder)
-create_Regime_data file requires the regime data input specified in our thesis. This is mainly responisble for data cleaning, VRP calculation and eventual merging.
+2. Regime Signal Models: (regime_signal folder)
+* create_Regime_data file requires the regime data input specified in our thesis. This is mainly responisble for data cleaning, VRP calculation and eventual merging.
 1_regime_Y_Selection file use the output from previous file, and conduct selection on the eventual Y selection for out regime model. Spoilers alert, our research found VIX to be the answer.
 2_Final Regime are used to determine the threshold level following regime selection. This serves as a robustness test for the eventual threshold level.
 3_Final_model file conducts model selection to determine the eventual regime model we will applied
